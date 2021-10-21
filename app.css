@@ -1,0 +1,133 @@
+:root {
+    --primary: #295ba7;
+    --secundary: #4d9dd8;
+    --yellow-primary: #fff22d;
+    --yellow-secundary: #e6b031;
+    --red-primary: #b31e25;
+    --red-secundary: #8b1418;
+    --green-primary: #74b552;
+    --green-secundary: #36a557;
+    --gray: #cdcdcd;
+
+    --background: #f7f7f7;
+    --text-color: #474747;
+
+    --font-size-small: 14px;
+    --font-size-medium: 18px;
+    --font-size-big: 51px;
+
+    --font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background-color: var(--background);
+}
+
+*,
+body,
+html,
+input,
+a,
+ul,
+li,
+h1,
+h2,
+p,
+span,
+label {
+    font-family: var(--font-family);
+    line-height: 1.5;
+
+}
+
+p,
+span,
+label,
+a,
+input,
+.k-textbox.form-control {
+    font-size: var(--font-size-medium);
+}
+
+a:focus,
+a:hover {
+    color: var(--primary);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.display-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-secondary {
+    background-color: var(--primary);
+}
+
+.container-first .text {
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 46px;
+    font-size: 23px;
+}
+
+.container-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 140px;
+}
+
+.container-secondary img {
+    height: 100vh;
+}
+
+/* Personalização do chatbot */
+
+.chat-button {
+    background-color: transparent !important;
+    background-image: url(img/ati-logo-simples.png) !important;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 766px) and (max-width: 983px) {}
+
+
+/* Celular */
+@media screen and (max-width: 765px) {
+
+    .display-container {
+        display: block;
+    }
+
+    .container-first {
+        height: 100vh;
+        text-align: center;
+    }
+
+    .container-secondary {
+        display: none;
+    }
+
+    .logo {
+        height: 103px;
+    }
+
+    .container-first .text {
+        margin-top: 21px;
+        font-size: 16px;
+    }
+}
